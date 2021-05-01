@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "641296555346",
+    "project_id": "ontix-2a59f",
+    "storage_bucket": "ontix-2a59f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641296555346:android:a13b7b53dfe3f076532e8b",
+        "android_client_info": {
+          "package_name": "com.example.ontix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641296555346-3uhil43eb98n5c7go3gjrmf8nvn6iurc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgDL2ZnC_fv_3krc_Fjf3ODl5c8M2CQ48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641296555346-3uhil43eb98n5c7go3gjrmf8nvn6iurc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

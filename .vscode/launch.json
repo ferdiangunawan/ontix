@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      
+
+        {
+            "name": "ontix",
+           "request": "launch",
+            "type": "dart"
+       },
+        {
+            "name": "Android 11",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "emulator-5554"
+          },
+        
+        {
+            "name": "Galaxy S6",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "192.168.56.101:5555"
+          },
+          {
+            "name": "iPhone 11 Pro",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "C36531E1-DAEC-43FC-B2A3-195CF2BD76E1"
+          },
+    ],
+
+    "compounds": [
+        {
+          "name": "All Devices",
+          "configurations": ["Android 11","Galaxy S6", "iPhone 11 Pro"]
+        }
+      ]
+}
