@@ -53,6 +53,7 @@ class SplashPage extends StatelessWidget {
               children: <Widget>[
                 Text("Already have an account?",
                     style: greyTextFont.copyWith(fontWeight: FontWeight.w400)),
+                SizedBox(width: 6),
                 GestureDetector(
                     onTap: () {
                       context.read<PageBloc>().add(GoToLoginPage());

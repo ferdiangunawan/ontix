@@ -130,7 +130,13 @@ class _SignInPageState extends State<SignInPage> {
                   Text('Start Fresh Now? ',
                       style:
                           greyTextFont.copyWith(fontWeight: FontWeight.w400)),
-                  Text(' Sign Up', style: greenTextFont),
+                  GestureDetector(
+                      onTap: () {
+                        context
+                            .read<PageBloc>()
+                            .add(GoToRegistrationDpage(RegistrationData()));
+                      },
+                      child: Text(' Sign Up', style: greenTextFont)),
                 ],
               )
             ],
