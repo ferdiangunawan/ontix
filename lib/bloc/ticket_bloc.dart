@@ -9,7 +9,6 @@ part 'ticket_event.dart';
 class TicketBloc extends Bloc<TicketEvent, TicketState> {
   TicketBloc(TicketState initialState) : super(initialState);
 
-  @override
   TicketState get initialState => TicketState([]);
 
   @override

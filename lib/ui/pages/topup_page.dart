@@ -1,7 +1,7 @@
 part of 'pages.dart';
 
 class TopUpPage extends StatefulWidget {
-  PageEvent pageEvent;
+  final PageEvent pageEvent;
   TopUpPage(this.pageEvent);
 
   @override

@@ -8,7 +8,6 @@ class Promo extends Equatable {
   Promo(
       {@required this.title, @required this.subtitle, @required this.discount});
   @override
-  // TODO: implement props
   List<Object> get props => [title, subtitle, discount];
 }
 

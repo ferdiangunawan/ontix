@@ -11,7 +11,6 @@ part 'user_event.dart';
 class UserBloc extends Bloc<UserEvent, UserState> {
   UserBloc(UserState initialState) : super(initialState);
 
-  @override
   UserState get initialState => UserInitial();
 
   @override

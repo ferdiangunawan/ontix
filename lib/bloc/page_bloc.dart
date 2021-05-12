@@ -11,47 +11,46 @@ part 'page_event.dart';
 class PageBloc extends Bloc<PageEvent, PageState> {
   PageBloc(PageState initialState) : super(initialState);
 
-  @override
-  PageState get initialState => onInitialPage();
+  PageState get initialState => OnInitialPage();
 
   @override
   Stream<PageState> mapEventToState(
     PageEvent event,
   ) async* {
     if (event is GoToSplashPage) {
-      yield onSplashPage();
+      yield OnSplashPage();
     } else if (event is GoToLoginPage) {
-      yield onLoginPage();
+      yield OnLoginPage();
     } else if (event is GoToMainPage) {
-      yield onMainPage(
+      yield OnMainPage(
           bottomNavBarIndex: event.bottomNavBarIndex,
           isExpired: event.isExpired);
     } else if (event is GoToRegistrationDpage) {
-      yield onRegistrationPage(event.registrationData);
+      yield OnRegistrationPage(event.registrationData);
     } else if (event is GoToPreferencePage) {
-      yield onPreferencePage(event.registrationData);
+      yield OnPreferencePage(event.registrationData);
     } else if (event is GoToAccountConfirmationPage) {
-      yield onAccountConfirmationPage(event.registrationData);
+      yield OnAccountConfirmationPage(event.registrationData);
     } else if (event is GoToMovieDetailPage) {
-      yield onMovieDetailPage(event.movie);
+      yield OnMovieDetailPage(event.movie);
     } else if (event is GoToSelectSchedulePage) {
-      yield onSelectSchedulePage(event.movieDetail);
+      yield OnSelectSchedulePage(event.movieDetail);
     } else if (event is GoToSelectSeatPage) {
-      yield onSelectSeatPage(event.ticket);
+      yield OnSelectSeatPage(event.ticket);
     } else if (event is GoToCheckoutPage) {
-      yield onCheckoutPage(event.ticket);
+      yield OnCheckoutPage(event.ticket);
     } else if (event is GoToSuccessPage) {
-      yield onSuccessPage(event.ticket, event.transaction);
+      yield OnSuccessPage(event.ticket, event.transaction);
     } else if (event is GoToTicketDetailPage) {
-      yield onTicketDetailPage(event.ticket);
+      yield OnTicketDetailPage(event.ticket);
     } else if (event is GoToProfileDetailPage) {
-      yield onProfileDetailPage();
+      yield OnProfileDetailPage();
     } else if (event is GoToEditProfilePage) {
-      yield onEditProfilePage(event.users);
+      yield OnEditProfilePage(event.users);
     } else if (event is GoToTopUpPage) {
-      yield onTopUpPage(event.pageEvent);
+      yield OnTopUpPage(event.pageEvent);
     } else if (event is GoToWalletPage) {
-      yield onWalletPage(event.pageEvent);
+      yield OnWalletPage(event.pageEvent);
     }
   }
 }

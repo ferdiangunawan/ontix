@@ -4,125 +4,125 @@ abstract class PageState extends Equatable {
   const PageState();
 }
 
-class onInitialPage extends PageState {
+class OnInitialPage extends PageState {
   @override
   List<Object> get props => [];
 }
 
-class onLoginPage extends PageState {
+class OnLoginPage extends PageState {
   @override
   List<Object> get props => [];
 }
 
-class onSplashPage extends PageState {
+class OnSplashPage extends PageState {
   @override
   List<Object> get props => [];
 }
 
-class onMainPage extends PageState {
+class OnMainPage extends PageState {
   final int bottomNavBarIndex;
   final bool isExpired;
-  onMainPage({this.bottomNavBarIndex = 0, this.isExpired = false});
+  OnMainPage({this.bottomNavBarIndex = 0, this.isExpired = false});
   @override
   List<Object> get props => [bottomNavBarIndex, isExpired];
 }
 
-class onRegistrationPage extends PageState {
+class OnRegistrationPage extends PageState {
   final RegistrationData registrationData;
-  onRegistrationPage(this.registrationData);
+  OnRegistrationPage(this.registrationData);
   @override
   List<Object> get props => [];
 }
 
-class onPreferencePage extends PageState {
+class OnPreferencePage extends PageState {
   final RegistrationData registrationData;
-  onPreferencePage(this.registrationData);
+  OnPreferencePage(this.registrationData);
   @override
   List<Object> get props => [];
 }
 
-class onAccountConfirmationPage extends PageState {
+class OnAccountConfirmationPage extends PageState {
   final RegistrationData registrationData;
-  onAccountConfirmationPage(this.registrationData);
+  OnAccountConfirmationPage(this.registrationData);
   @override
   List<Object> get props => [];
 }
 
-class onMovieDetailPage extends PageState {
+class OnMovieDetailPage extends PageState {
   final Movie movie;
-  onMovieDetailPage(this.movie);
+  OnMovieDetailPage(this.movie);
   @override
   List<Object> get props => [movie];
 }
 
-class onSelectSchedulePage extends PageState {
+class OnSelectSchedulePage extends PageState {
   final MovieDetail movieDetail;
-  onSelectSchedulePage(this.movieDetail);
+  OnSelectSchedulePage(this.movieDetail);
 
   @override
   List<Object> get props => [movieDetail];
 }
 
-class onSelectSeatPage extends PageState {
+class OnSelectSeatPage extends PageState {
   final Ticket ticket;
 
-  onSelectSeatPage(this.ticket);
+  OnSelectSeatPage(this.ticket);
 
   @override
   List<Object> get props => [ticket];
 }
 
-class onCheckoutPage extends PageState {
+class OnCheckoutPage extends PageState {
   final Ticket ticket;
 
-  onCheckoutPage(this.ticket);
+  OnCheckoutPage(this.ticket);
 
   @override
   List<Object> get props => [ticket];
 }
 
-class onSuccessPage extends PageState {
+class OnSuccessPage extends PageState {
   final Ticket ticket;
   final OntixTransaction transaction;
 
-  onSuccessPage(this.ticket, this.transaction);
+  OnSuccessPage(this.ticket, this.transaction);
 
   @override
   List<Object> get props => [ticket, transaction];
 }
 
-class onTicketDetailPage extends PageState {
+class OnTicketDetailPage extends PageState {
   final Ticket ticket;
-  onTicketDetailPage(this.ticket);
+  OnTicketDetailPage(this.ticket);
 
   @override
   List<Object> get props => [ticket];
 }
 
-class onProfileDetailPage extends PageState {
+class OnProfileDetailPage extends PageState {
   @override
   List<Object> get props => [];
 }
 
-class onEditProfilePage extends PageState {
+class OnEditProfilePage extends PageState {
   final Users users;
-  onEditProfilePage(this.users);
+  OnEditProfilePage(this.users);
   @override
   List<Object> get props => [users];
 }
 
-class onTopUpPage extends PageState {
+class OnTopUpPage extends PageState {
   final PageEvent pageEvent;
-  onTopUpPage(this.pageEvent);
+  OnTopUpPage(this.pageEvent);
 
   @override
   List<Object> get props => [pageEvent];
 }
 
-class onWalletPage extends PageState {
+class OnWalletPage extends PageState {
   final PageEvent pageEvent;
 
-  onWalletPage(this.pageEvent);
+  OnWalletPage(this.pageEvent);
 
   @override
   List<Object> get props => [pageEvent];

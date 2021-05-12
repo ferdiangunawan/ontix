@@ -18,37 +18,37 @@ class Wrapper extends StatelessWidget {
       }
     }
     return BlocBuilder<PageBloc, PageState>(
-        builder: (_, pageState) => (pageState is onSplashPage)
+        builder: (_, pageState) => (pageState is OnSplashPage)
             ? SplashPage()
-            : (pageState is onLoginPage)
+            : (pageState is OnLoginPage)
                 ? SignInPage()
-                : (pageState is onRegistrationPage)
+                : (pageState is OnRegistrationPage)
                     ? SignUpPage(pageState.registrationData)
-                    : (pageState is onPreferencePage)
+                    : (pageState is OnPreferencePage)
                         ? PreferencePage(pageState.registrationData)
-                        : (pageState is onAccountConfirmationPage)
+                        : (pageState is OnAccountConfirmationPage)
                             ? AccountConfirmationPage(
                                 pageState.registrationData)
-                            : (pageState is onMovieDetailPage)
+                            : (pageState is OnMovieDetailPage)
                                 ? MovieDetailPage(pageState.movie)
-                                : (pageState is onSelectSchedulePage)
+                                : (pageState is OnSelectSchedulePage)
                                     ? SelectSchedulePage(pageState.movieDetail)
-                                    : (pageState is onSelectSeatPage)
+                                    : (pageState is OnSelectSeatPage)
                                         ? SelectSeatPage(pageState.ticket)
-                                        : (pageState is onCheckoutPage)
+                                        : (pageState is OnCheckoutPage)
                                             ? CheckoutPage(pageState.ticket)
-                                            : (pageState is onSuccessPage)
+                                            : (pageState is OnSuccessPage)
                                                 ? SuccessPage(pageState.ticket,
                                                     pageState.transaction)
                                                 : (pageState
-                                                        is onTicketDetailPage)
+                                                        is OnTicketDetailPage)
                                                     ? TicketDetailPage(
                                                         pageState.ticket)
                                                     : (pageState
-                                                            is onProfileDetailPage)
+                                                            is OnProfileDetailPage)
                                                         ? ProfileDetailPage()
                                                         : (pageState
-                                                                is onMainPage)
+                                                                is OnMainPage)
                                                             ? MainPage(
                                                                 bottomNavBarIndex:
                                                                     pageState
@@ -58,17 +58,17 @@ class Wrapper extends StatelessWidget {
                                                                         .isExpired,
                                                               )
                                                             : (pageState
-                                                                    is onEditProfilePage)
+                                                                    is OnEditProfilePage)
                                                                 ? EditProfilePage(
                                                                     pageState
                                                                         .users)
                                                                 : (pageState
-                                                                        is onTopUpPage)
+                                                                        is OnTopUpPage)
                                                                     ? TopUpPage(
                                                                         pageState
                                                                             .pageEvent)
                                                                     : (pageState
-                                                                            is onWalletPage)
+                                                                            is OnWalletPage)
                                                                         ? WalletPage(
                                                                             pageState.pageEvent)
                                                                         : Container());

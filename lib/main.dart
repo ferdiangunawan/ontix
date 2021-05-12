@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       initialData: null,
       child: MultiBlocProvider(
         providers: [
-          BlocProvider<PageBloc>(create: (_) => PageBloc(onInitialPage())),
+          BlocProvider<PageBloc>(create: (_) => PageBloc(OnInitialPage())),
           BlocProvider<UserBloc>(create: (_) => UserBloc(UserInitial())),
           BlocProvider<ThemeBloc>(
               create: (_) => ThemeBloc(ThemeState(ThemeData()))),
